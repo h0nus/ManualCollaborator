@@ -34,6 +34,8 @@ def loadJson(data):
                 i, responses[i]["protocol"], convert_java_millis(responses[i]["time"]), responses[i]["client"]))
             if responses[i]["protocol"] == 'http':
                 print("\tRequest: {}".format(dats["request"]))
+            elif responses[i]["protocol"] == 'https':
+                print("\tRequest: {}".format(dats["request"]))
             elif responses[i]["protocol"] == 'dns':
                 print("\tRawRequest: {}".format(dats["rawRequest"]))
 
